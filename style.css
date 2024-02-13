@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root {
+    --brand-color: #4a90e2; 
+    --primary-color: rgb(18, 26, 43); 
+    --secondary-color: rgb(25, 33, 51); 
+    --text-color: #ffffff; 
+    --hover-color: #383838; 
+    --border-color: #2b609e; 
+}
+body{
+    background-color: var(--primary-color);
+}
+.container{
+    max-width: 1320px;
+    width: 100%;
+    padding: 0 1rem;
+}
+ul li{
+    list-style: none;
+}
+header{
+    background-color: var(--secondary-color);
+}
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+header h2, .logo{
+    color: var(--text-color);
+    font-weight: 00;
+}
+header .container{
+    padding: 1rem;
+}
+main .container{
+    margin: 0 auto;
+    padding: 3rem 1rem;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    border: 1px solid var(--border-color);
+    background-color: var(--secondary-color);
+    padding: 2rem 1rem;
+    border-radius: 5px;
+    
+}
+.wrapper ul{
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.2s ease;
+}
+.wrapper.active ul{
+    opacity: 1;
+    height: auto;
+}
+.search{
+    position: relative;
+    width: 100%;
+}
+
+.search input{
+    width: 100%;
+    padding: 0.5rem 0.5rem 0.5rem 2rem;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    z-index: 10;
+}
+.search .removeIcon{
+    position: absolute;
+    right: 10px;
+    top:5px;
+    cursor: pointer;  
+    display: none;  
+}
+.searchIcon{
+    position: absolute;
+    left: 5px;
+    top:5px;
+}
+.info-text{
+    color: #919191;
+    line-height: 18px;
+    font-size: 13px;
+    margin-top: 1rem;
+}
+.mainList{
+    margin-top: 2rem;
+    transition: all 0.2s ease;
+}
+.word{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.mainWord{
+    font-size: 25px;
+}
+.adjective{
+    color: #919191;
+}
+.user-word, .details > p{
+    color: var(--brand-color);
+}
+.volume{
+    cursor: pointer;
+}
+.volume, .meaning span, .example span{
+    color: var(--text-color);
+}
+.volume:hover{
+    color: var(--brand-color);
+}
+.content{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.content p{
+    font-weight: 600;
+}
+.content span{
+    font-weight: 300;
+    font-size: 15px;
+    width: 100%;
+}
+
+.synonyms .details .list{
+    width: 100%;
+    text-decoration: underline;
+    color: #919191;
+}
+.content li{
+    border-left: 2px solid var(--brand-color);
+    box-shadow: 0px 9px 13px #0000001c;
+    padding: 1rem 0 1rem 1rem;
+    border-radius: 8px;
+}
+.synonyms span{
+    border: none;
+    margin-right: 8px;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Dictionary</title>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <span class="material-symbols-outlined logo">dictionary</span>
+        <h2>English Dictionary</h2>
+   </div>
+</header>
+<main>
+    <div class="container">
+        <div class="wrapper">
+            <div class="search">
+                <input type="text" placeholder="Search a word">
+                <span class="material-symbols-outlined searchIcon">search</span>
+                <span class="material-symbols-outlined removeIcon">close</span>
+            </div>
+            <p class="info-text">Type a word and press enter to get the meaning, example, pronunciation, and synonyms on that typed word.</p>
+            <ul class="mainList">
+                <li class="word">
+                    <div class="details">
+                        <p class="mainWord"></p>
+                        <span class="adjective"></span>
+                    </div>
+                    <span class="material-symbols-outlined volume">volume_up</span>
+                </li>
+                <div class="content">
+                    <li class="meaning">
+                        <div class="details">
+                            <p>Meaning</p>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="example">
+                        <div class="details">
+                            <p>Example</p>
+                            <span></span>
+                        </div>
+                    </li>
+                    <li class="synonyms">
+                        <div class="details">
+                            <p>Synonyms</p>
+                            <div class="list">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</main>
+
+<script src="main.js"></script>
+</body>
+</html>
